@@ -48,6 +48,7 @@ public class Account {
 	private String titular;
 	private String ccc;
 	private double dineroCuenta = 0;
+	private String oficina;
 
 	// Constructor
 	public Account(String nom, String cuenta) {
