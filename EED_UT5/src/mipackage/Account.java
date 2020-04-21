@@ -72,9 +72,13 @@ public class Account {
 	public void retirar(double cantidad) throws Exception {
 		if (cantidad < 0)
 			throw new Exception("No se puede retirar una cantidad negativa.");
-		if (disponible() < cantidad)
+		if (getBalance() < cantidad)
 			throw new Exception("No hay suficiente saldo para retirar la cantidad solicitada.");
 		setBalance(getBalance() - cantidad);
+	}
+
+	public void mostrarSaldo() {
+		System.out.println("El dinero que hay en la cuenta es " + this.dineroCuenta);
 	}
 
 }
