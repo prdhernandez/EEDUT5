@@ -15,6 +15,11 @@ public class Account {
 		return titular;
 	}
 
+	@Override
+	public String toString() {
+		return "Account [titular=" + titular + ", ccc=" + ccc + ", dineroCuenta=" + dineroCuenta + "]";
+	}
+
 	public void setTitular(String titular) {
 		this.titular = titular;
 	}
