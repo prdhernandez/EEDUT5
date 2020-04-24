@@ -9,6 +9,8 @@ package mipackage;
  *
  * @author Nayra Deniz
  */
+
+/** Comentario prueba github**/
 public class Account {
 
 	public String getTitular() {
